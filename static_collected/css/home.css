@@ -56,6 +56,13 @@ a {
   text-decoration: none;
 }
 
+.generators-intro{
+  max-width: 850px;
+  margin: 10px auto 0;
+  text-align: center;
+  line-height: 1.7;
+  color: #4b5563;
+}
 .bo-container {
   width: 100%;
   max-width: var(--bo-container);
