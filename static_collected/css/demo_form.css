@@ -199,4 +199,26 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 3px var(--brand-weak);b
   .modal__subtitle{ font-size: 14px; }
   .modal__close{ top: 8px; right: 8px; }
 }
-  
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 30px;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+  overflow-y: auto;
+}
+.modal.show-modal {
+  display: flex;
+}
+
+.modal__dialog {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  position: relative;
+}

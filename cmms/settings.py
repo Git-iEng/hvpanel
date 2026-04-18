@@ -34,7 +34,7 @@ else:
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = ["earthingstudies.ieng.tech", ".ieng.tech","*"]
+ALLOWED_HOSTS = ["earthingstudies.ieng.tech", ".ieng.tech", "*"]
  
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
