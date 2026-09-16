@@ -32,6 +32,16 @@
   <link rel="icon" href="{% static 'images/logo1.png' %}">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Updated by Diptee on 16-Sep-2026: START -->
+  <!-- Keep the Submit Enquiry modal above the fixed website header -->
+  <style>
+    #demoModal.modal {
+      z-index: 100000 !important;
+    }
+  </style>
+  <!-- Updated by Diptee on 16-Sep-2026: END -->
+
 </head>
 
 <body>
@@ -67,7 +77,7 @@
 
           <div class="bo-hero-cta">
             <a href="#overview" class="bo-btn-primary">Explore Services</a>
-            <a href="#contact" class="bo-btn-ghost js-open-demo">Submit Inquiry</a>
+            <a href="#contact" class="bo-btn-ghost js-open-demo">Submit Enquiry</a>
           </div>
 
           <div class="bo-hero-stats">
@@ -629,7 +639,9 @@
 
             <p class="ieng-loc-row"><strong>Phone:</strong> +61 (02) 8318 1490</p>
             <p class="ieng-loc-row"><strong>Email:</strong> <a href="mailto:enquiries@iengaust.com.au">enquiries@iengaust.com.au</a></p>
-            <p class="ieng-loc-address">Warawara Cct, Quakers Hill NSW 2763, Australia</p>
+                 <!-- Updated by Diptee on 10-Sep-2026-->
+            <p class="ieng-loc-address">Rooty Hill, NSW 2766, Australia</p>
+            <!-- end -->
 
             <a class="ieng-loc-btn" target="_blank" rel="noopener"
               href="https://www.google.com/maps?ll=-33.723524,150.875902&z=5&t=m&hl=en-US&gl=US&mapclient=embed&cid=2860432314088839065">
@@ -692,6 +704,11 @@
   </section>
 
   {% include 'footer.html' %}
+
+  <!-- Updated by Diptee on 16-Sep-2026: START -->
+  <!-- Required only for Submit Enquiry modal + OTP form behaviour -->
+  <script defer src="{% static 'js/demo_form.js' %}"></script>
+  <!-- Updated by Diptee on 16-Sep-2026: END -->
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
